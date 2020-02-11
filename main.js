@@ -24,11 +24,11 @@
             return response2.json();
         })
         .then((myDeck) => {
-      
-            // req-003 display the hand in page
-            for(let i in myDeck.cards) {
-                document.getElementById("cards").innerHTML += "<img src=" +myDeck.cards[i].image+ ">";
-            }
+            // this is unnecessary
+            // // req-003 display the hand in page
+            // for(let i in myDeck.cards) {
+            //     document.getElementById("cards").innerHTML += "<img src=" +myDeck.cards[i].image+ ">";
+            // }
             // console.log("my cards: " + cards);
             let rank = getHighestPokerHands(myDeck.cards);
 
