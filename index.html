@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     <style>
         .transparent {
-            opacity: 0.50;
+            opacity: 0.65;
         }
         div#pokerhands{
             text-align: center;
@@ -20,6 +20,31 @@
             margin: 10px;
             border: white solid 2px;
             background-color: white;
+        }
+        #reload {
+            padding: 10px;
+            /* margin-left: 40px; */
+            margin-top: 100px;
+            margin-right: 80px;
+            background-color: rgba(65, 123, 90, 0.925);
+            border: 1px white solid;
+            border-radius: 7px 7px 7px 0px;
+            font-family: 'Muli', sans-serif;
+            color: white;
+            text-align: center;
+            float: right;
+            font-size: 20px;
+            width: 100px;
+            text-decoration: underline;
+        }
+        #reload:focus, #reload:active {
+            background-color: #417B5A;
+            border: 2px white solid;
+            outline: none;
+        }
+        #reload:hover {
+            background-color: #417B5A;
+            text-decoration: overline;
         }
         h1 {
             text-align: center;
@@ -40,5 +65,10 @@
 <body>
     <h1><span>Highest Poker Hands:</span></h1>
     <div id="pokerhands"></div>
+    <script>
+        document.getElementById("reload").onclick = () => {
+            location.reload();
+        };
+    </script>
 </body>
 </html>
